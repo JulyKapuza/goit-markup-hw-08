@@ -1,0 +1,28 @@
+:root {
+    --main-font: Roboto, sans-serif;
+    --logo-font: Raleway, sans-serif;
+    --fz-h1: 44px;
+    --fw-header-500: 500;
+    --fw-title-700: 700;
+
+    /* text colors */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --black-color-logo: #000000;
+    --white-color: #ffffff;
+
+    /* background colors */
+    --dark-bgc: #2F303A;
+    --light-bgc: #F5F4FA;
+    --btn-bdc: #188CE8;
+    --border-color: #ECECEC;
+    --icon-color: #AFB1B8;
+    --border-card-portfolio: #EEEEEE;
+
+    /* grib */
+    --card-gap: 30px;
+
+    /* animation */
+    --timing: cubic-bezier(0.4, 0, 0.2, 1);
+}

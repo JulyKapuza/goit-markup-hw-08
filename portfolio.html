@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+  <header class="page-header">
+
+        <div class="container container--flex">
+            <nav class="main-nav">
+                <a class="logo page-header__logo link" href="./index.html" >
+                    <span class="logo__accent">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студия</a> </li>
+                    <li class="site-nav__item"><a  class="site-nav__link site-nav__link--current link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="" >Контакты</a></li>
+                </ul>
+            </nav>
+                        
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link link" href="mailto:info@devstudio.com" >
+                        <svg class="contacts__icon" width="16" height="12" >
+                            <use href="./image/sprite.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li class="contacts__item">
+                    <a class="contacts__link link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./image/sprite.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Портфолио</h1>
+                <!-- Фильтр -->
+                <ul class="filter list">
+                    <li class="filter__item">
+                        <button class="button button--secondary" type="button" >Все</button></li>
+                    <li class="filter__item">
+                        <button class="button button--secondary" type="button" >Веб-сайты</button></li>
+                    <li class="filter__item">
+                        <button  class="button button--secondary" type="button">Приложения</button></li>
+                    <li class="filter__item">
+                        <button  class="button button--secondary" type="button">Дизайн</button></li>
+                    <li class="filter__item">
+                        <button class="button button--secondary" type="button">Маркетинг</button></li>
+                
+                </ul>
+                
+                <!-- Галерея -->
+                
+                <ul class="card-set list">
+                    <li class="card-set__item">
+                       <a class="gallery link" href="">
+                                <div class="description">
+                                    <img src="./image/tech.jpg" alt="Технокряк" width="370">
+                                    <div class="description__overlay">
+                                        <div class="description__text">
+                                            <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
+                                            Все это позволит посетителю получить
+                                            исчерпывающие сведения о компании или частном лице.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                              
+                    <div class="gallery__content">
+                            <h2 class="gallery__title">Технокряк</h2>
+                            <p class="gallery__text">Веб-сайт</p>
+                    </div>
+                                                   
+                       </a>
+                    </li>
+                    <li class="card-set__item">
+                        <a  class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/baketball.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                             Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam 
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="gallery__text">Дизайн</p>
+                            </div>
+                        </a>
+                       
+                    </li>
+                    <li class="card-set__item">
+                        <a class="gallery link" href="">
+                            <div class="description">
+                            <img src="./image/seafood.jpg" alt="Ресторан Seafood" width="370">
+                            <div class="description__overlay">
+                                <div class="description__text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                        Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                        debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Ресторан Seafood</h2>
+                                <p class="gallery__text">Приложение</p>
+                            </div>
+                        </a>
+                        
+                
+                    </li>
+                    <li class="card-set__item">
+                        <a  class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/headphones.jpg" alt="Проект Prime" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Проект Prime</h2>
+                                <p class="gallery__text">Маркетинг</p>
+                            </div>
+                        </a>
+                       
+                
+                    </li>
+                    <li class="card-set__item">
+                        <a  class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/box.jpg" alt="Проект Boxes" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Проект Boxes</h2>
+                                <p class="gallery__text">Приложение</p>
+                            
+                            </div>
+                        </a>
+                        
+                
+                    </li>
+                    <li class="card-set__item">
+                        <a class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/screen.jpg" alt="Inspiration has no Borders" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Inspiration has no Borders</h2>
+                                <p class="gallery__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                       
+                    </li>
+                    <li class="card-set__item">
+                        <a class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/magazine.jpg" alt="Издание Limited Edition" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Издание Limited Edition</h2>
+                                <p class="gallery__text">Дизайн</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="card-set__item">
+                        <a class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/lab.jpg" alt="Проект LAB" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Проект LAB</h2>
+                                <p class="gallery__text">Маркетинг</p>
+                            </div>
+                        </a>
+                        
+                
+                    </li>
+                    <li class="card-set__item">
+                        <a class="gallery link" href="">
+                            <div class="description">
+                                <img src="./image/laptop.jpg" alt="Growing Business" width="370">
+                                <div class="description__overlay">
+                                    <div class="description__text">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, porro.
+                                            Vero quibusdam porro quas unde, distinctio, voluptatem consectetur quam
+                                            debitis deserunt inventore ipsa in, sint eos officiis. Dolorem, ad nam!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery__content">
+                                <h2 class="gallery__title">Growing Business</h2>
+                                <p class="gallery__text">Приложение</p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                </ul>
+
+            </div>
+           
+            
+        </section>
+
+    </main>
+
+    <!-- Футер -->
+     <footer class="page-footer">
+        <div class="container page-footer--flex">
+            <div>
+                <a class="logo page-footer__logo link" href="./index.html" >
+                    <span class="logo__accent">Web</span>Studio</a>
+                <address>
+                    <ul class="info list">
+                        <li class="info__item">
+                            <a class="info__link link" href="https://goo.gl/maps/9Z7qe7YCzhTjA3D87" target="_blank" rel="nofollow noopener noreferrer">
+                                г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="info__item">
+                            <a class="info__link info__link--grey link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="info__item">
+                            <a class="info__link info__link--grey link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+
+            </div>
+            
+            <div>
+                <p class="page-footer__title">Присоединяйтесь</p>
+                <ul class="social list">
+                    <li class="social__item">
+                        <a class="social__link social__link--inverse link" href="">
+                        <svg class="social__icon">
+                            <use href="./image/icons.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social__item">
+                        <a class="social__link social__link--inverse link" href="">
+                        <svg class="social__icon">
+                            <use href="./image/icons.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social__item">
+                        <a class="social__link social__link--inverse link" href="">
+                        <svg class="social__icon">
+                            <use href="./image/icons.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social__item">
+                        <a class="social__link social__link--inverse link" href="">
+                        <svg class="social__icon">
+                            <use href="./image/icons.svg#linkedin"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div>
+                 <p class="page-footer__title">Подпишитесь на рассылку</p>
+            <form class="footer-form">  
+                <input class="footer-form__input" type="email" name="mail" placeholder="E-mail" required>               
+                <button class="button button--primary footer-form__btn" type="submit">Подписаться             
+                    <svg class="footer-form__icon">
+                        <use href="./image/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+               
+            </form>
+        </div>
+                
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

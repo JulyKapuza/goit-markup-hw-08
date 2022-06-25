@@ -1,0 +1,36 @@
+/* КОНТАКТИ ХЕДЕРА */
+
+.contacts {
+    // display: flex;
+    // margin-left: auto;
+    // align-items: center;
+
+    &__item:not(:last-child) {
+            margin-right: var(--card-gap);
+        }  
+}
+
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    color: var(--primary-text-color);
+    font-weight: var(--fw-header-500);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--timing);
+
+     &:hover,
+     &:focus {
+            color: var(--accent-color);
+        }
+
+}
+
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+

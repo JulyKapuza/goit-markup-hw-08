@@ -1,0 +1,51 @@
+// UTILS
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+// BASE
+@import './base/common';
+@import './base/container';
+@import './base/card-set';
+
+// LAYOUT
+@import './layout/page-header';
+@import './layout/main-nav';
+@import './layout/logo';
+@import './layout/site-nav';
+@import './layout/contacts-header';
+
+// hero
+@import './layout/hero';
+
+// button
+@import './layout/button-primary';
+
+// benefits
+@import './layout/benefits';
+
+// about
+@import './layout/about';
+
+// team
+@import './layout/team';
+@import './layout/social';
+
+// customers
+@import './layout/customers';
+
+// footer
+@import './layout/page-footer';
+@import './layout/footer-info';
+@import './layout/footer-form';
+
+// portfolio
+@import './layout/filter';
+
+// gallery
+@import './layout/gallery';
+@import './layout/gallery-descr';
+
+// COMPONENTS
+@import './components/modal';
+@import './components/modal-form';

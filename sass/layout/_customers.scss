@@ -1,0 +1,39 @@
+/*СЕКЦІЯ КЛІЄНТИ */
+
+// .customers {
+//     display: flex;
+// }
+
+.customers__link {
+    width: 170px;
+    height: 92px;
+    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+
+    transition: color 250ms var(--timing),
+        border 250ms var(--timing);
+
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+                border: 1px solid var(--accent-color);
+            }
+}
+
+.customers__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+
+.customers__item:not(:last-child) {
+    margin-right: var(--card-gap);
+}

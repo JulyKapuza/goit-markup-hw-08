@@ -1,0 +1,20 @@
+/*FOOTER */
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--dark-bgc);
+    color: var(--white-color);
+}
+
+// .page-footer--flex {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: space-between;
+// }
+
+.page-footer__logo {
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
