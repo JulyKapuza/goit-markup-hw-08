@@ -1,3 +1,64 @@
 .page-header {
     border-bottom: 1px solid var(--border-color);
+    position: relative;
+
+}
+
+.menu-btn{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    // display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+
+        transition: color 250ms var(--timing);
+        
+            &:focus,
+            &:hover {
+                color: var(--accent-color);
+            }
+}
+
+.menu-icon{
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+}
+
+
+
+.icon-cross{
+    display: none;
+}
+
+.menu-btn.is-open .icon-cross{
+    display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container{
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    min-height: 796px;
+
+    background-color: burlywood;
+    padding: 48px 40px;
+
+    &.is-open{
+        display: block;
+    }
 }
