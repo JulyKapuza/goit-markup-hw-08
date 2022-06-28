@@ -5,13 +5,20 @@
 }
 
 .menu-btn{
+     
+    right: 0;
+    top: 100%;
+
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
 
-    // display: flex;
+    @media screen and (min-width:768px) {
+            display: none;
+        }
+    
         justify-content: center;
         align-items: center;
         width: 40px;
@@ -23,6 +30,7 @@
             &:hover {
                 color: var(--accent-color);
             }
+    
 }
 
 .menu-icon{
@@ -46,19 +54,30 @@
 }
 
 .menu-container{
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    min-height: 796px;
+position: relative;
 
     background-color: burlywood;
     padding: 48px 40px;
+    text-align: center;
 
-    &.is-open{
-        display: block;
+   
+
+    @media screen and (max-width:767px) {
+        display: none;
+
+        position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+
+         &.is-open {
+            display: block;
+        }
+
     }
+
+         @media screen and (min-width:768px) {
+             display: flex;
+    
+         }
 }

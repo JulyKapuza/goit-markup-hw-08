@@ -34,12 +34,19 @@ address {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
 
     &--no-padding {
             padding-top: 0;
         }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+    }
 }
 
 .link {
@@ -56,7 +63,9 @@ address {
     margin-bottom: 50px;
 
     @media screen and (max-width: 1199px) {
-            display: none;
-        }
+        margin-bottom: var(--card-gap);   
+    }
+
+    
 }
 

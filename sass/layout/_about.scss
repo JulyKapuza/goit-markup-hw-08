@@ -3,9 +3,15 @@
 .about {
     display: flex;
     
-    @media screen and (max-width: 1199px)  {
-        display: none;  
-    }
+}
+
+// до версії desktop цієї секції немає
+.section--hidden{
+
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+
 }
 
 

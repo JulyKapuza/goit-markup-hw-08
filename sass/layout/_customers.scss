@@ -1,11 +1,35 @@
 /*СЕКЦІЯ КЛІЄНТИ */
 
-// .customers {
-//     display: flex;
-// }
+.customers {
+    display: flex;
+    flex-wrap:wrap;
+    margin: -15px;
+    
+}
+
+.customers__item{
+
+    @media screen and (min-width:480px) {
+         margin: 15px;
+         width: calc((100% - 2 * 30px) / 2);
+    
+         }
+
+    @media screen and (min-width:768px) {
+            margin: 15px;
+            width: calc((100% - 3 * 30px) / 3);
+    
+        }
+
+    @media screen and (min-width:1200px) {
+             margin: 15px;
+             width: calc((100% - 6 * 30px) / 6);
+    
+         }
+}
+
 
 .customers__link {
-    width: 170px;
     height: 92px;
     display: block;
 
@@ -34,6 +58,3 @@
 }
 
 
-.customers__item:not(:last-child) {
-    margin-right: var(--card-gap);
-}

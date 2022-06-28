@@ -40,14 +40,22 @@
                 
 
                 <div class="menu-container" id="menu-container" data-menu>
-                    <ul class="site-nav list">
+
+                    
+                    <div class="menu-container__nav">
+                         <ul class="site-nav list">
                         <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link" href="./index.html">Студия</a>
                         </li>
                         <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a></li>
                         <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
-                    </ul>
+                        </ul>
 
-                    <ul class="contacts list">
+
+                    </div>
+                   
+                    <div class="menu-container__contacts">
+
+                        <ul class="contacts list">
                         <li class="contacts__item">
                             <a class="contacts__link link" href="mailto:info@devstudio.com">
                                 <svg class="contacts__icon" width="16" height="12">
@@ -62,6 +70,9 @@
                                 </svg>+38 096 111 11 11</a>
                         </li>
                     </ul>
+
+                    </div>
+                    
                 </div>
 
 
@@ -145,10 +156,10 @@
             </div>
         </section>
         <!-- Чем мы занимаемся -->
-        <section class="section section--no-padding">
+        <section class="section section--no-padding section--hidden">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
-                <ul class="about list ">
+                <ul class="about list">
                     <li class="about__item">
                             <img src="./image/computer.jpg" alt="Пишем сайты" width="370">
                             <p class="about_label">Десктопные приложения</p>
@@ -170,7 +181,7 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team list">
                     <li class="team__item">
-                        <img src="./image/igor.jpg" alt="Игорь Демьяненко" width="270">
+                        <img class="team__img" src="./image/igor.jpg" alt="Игорь Демьяненко" width="270">
                             <div class="team__card">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p class="team__text">Product Designer</p>
@@ -199,7 +210,7 @@
                             
                     </li>
                     <li class="team__item">
-                        <img src="./image/olga.jpg" alt="Ольга Репина" width="270">
+                        <img class="team__img" src="./image/olga.jpg" alt="Ольга Репина" width="270">
                             <div class="team__card">
                                 <h3 class="team__title">Ольга Репина</h3>
                                 <p class="team__text">Frontend Developer</p>
@@ -228,7 +239,7 @@
                             </div>
                     </li>
                     <li class="team__item">
-                        <img src="./image/nikolay.jpg" alt="Николай Тарасов" width="270">
+                        <img class="team__img" src="./image/nikolay.jpg" alt="Николай Тарасов" width="270">
                             <div class="team__card">
                                 <h3 class="team__title">Николай Тарасов</h3>
                                 <p class="team__text">Marketing</p>
@@ -258,7 +269,7 @@
                         
                     </li>
                     <li class="team__item">
-                        <img src="./image/mikhail.jpg" alt="Михаил Ермаков" width="270">
+                        <img class="team__img" src="./image/mikhail.jpg" alt="Михаил Ермаков" width="270">
                             <div class="team__card">
                                 <h3 class="team__title">Михаил Ермаков</h3>
                                 <p class="team__text">UI Designer</p>
@@ -339,7 +350,7 @@
     <!-- Футер -->
     <footer class="page-footer">
         <div class="container page-footer--flex">
-            <div>
+            <div class="page-footer__info">
                 <a class="logo page-footer__logo link" href="./index.html" >
                     <span class="logo__accent">Web</span>Studio</a>
                 <address>
@@ -356,7 +367,7 @@
 
             </div>
             
-            <div>
+            <div class="page-footer__social">
                 <p class="page-footer__title">Присоединяйтесь</p>
                 <ul class="social list">
                     <li class="social__item">
