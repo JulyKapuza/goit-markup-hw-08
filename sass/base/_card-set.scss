@@ -16,6 +16,9 @@
 }
 
 .card-set__item {
+    
+    border: 1px solid var(--border-card-portfolio);
+    border-top: none;
 
     &:not(:last-child) {
             @media screen and (max-width:767px) {

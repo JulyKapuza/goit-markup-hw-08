@@ -157,6 +157,10 @@ address {
   }
 }
 
+.card-set__item {
+  border: 1px solid var(--border-card-portfolio);
+  border-top: none;
+}
 @media screen and (max-width: 767px) {
   .card-set__item:not(:last-child) {
     margin-bottom: var(--card-gap);
@@ -408,6 +412,11 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: var(--card-gap);
@@ -415,6 +424,9 @@ address {
 }
 
 .contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: var(--primary-text-color);
   font-weight: var(--fw-header-500);
   line-height: 1.14;
@@ -1091,8 +1103,6 @@ address {
 
 .gallery__content {
   padding: 20px 24px;
-  border: 1px solid var(--border-card-portfolio);
-  border-top: none;
 }
 
 .gallery__title {

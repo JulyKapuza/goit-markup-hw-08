@@ -19,17 +19,26 @@
 
 .contacts__item {
 
+    @media screen and (min-width:768px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
     @media screen and (min-width:1200px) {
         &:not(:last-child){
             margin-right: var(--card-gap);
         }
        
     }
+}
     
-}  
+
 
 .contacts__link {
-  
+
+    display: flex;
+    
 
     color: var(--primary-text-color);
     font-weight: var(--fw-header-500);
@@ -58,6 +67,7 @@
     @media screen and (min-width:768px){
         fill: currentColor;
         margin-right: 10px;
+        
     }
     
 }
