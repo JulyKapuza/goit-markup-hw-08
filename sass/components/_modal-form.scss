@@ -1,8 +1,10 @@
 .modal-form {
-    width: 448px;
+    width: 100%;
 }
 
 .modal-form__title {
+    
+    text-align: center;
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -138,6 +140,14 @@
 .checkbox__link{
     text-decoration-line: underline;
     color: var(--accent-color);
+}
+
+.checkbox_desc{
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+
+    }
 }
 
 /* КНОПКА В ФОРМІ  */

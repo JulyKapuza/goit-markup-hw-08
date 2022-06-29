@@ -1,19 +1,35 @@
 /* КОНТАКТИ ХЕДЕРА */
 
 .contacts {
-    // display: flex;
-    // margin-left: auto;
-    // align-items: center;
+    display: flex;
+    
 
-    &__item:not(:last-child) {
-            margin-right: var(--card-gap);
-        }  
+    @media screen and (max-width:767px){
+        
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+             display: block;     
+         }
+
+    
 }
 
+.contacts__item {
+
+    @media screen and (min-width:1200px) {
+        &:not(:last-child){
+            margin-right: var(--card-gap);
+        }
+       
+    }
+    
+}  
 
 .contacts__link {
-    display: flex;
-    align-items: center;
+  
 
     color: var(--primary-text-color);
     font-weight: var(--fw-header-500);
@@ -22,15 +38,49 @@
 
     transition: color 250ms var(--timing);
 
-     &:hover,
-     &:focus {
-            color: var(--accent-color);
-        }
+    @media screen and (min-width:768px) {
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+            }
+
+        
+     }
 
 }
 
 .contacts__icon {
-    fill: currentColor;
-    margin-right: 10px;
+
+    @media screen and (max-width:767px){
+        display: none;
+    }
+
+    @media screen and (min-width:768px){
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
 }
+
+.contacts__link[href="tel:+380961111111"] {
+    @media screen and (max-width:767px){
+    color: var(--accent-color);
+    font-size: 34px;
+    line-height: 1.18;
+    margin-bottom: 32px;
+    
+    }
+
+}
+
+.contacts__link[href="tel:+380961111111"] {
+    @media screen and (max-width:767px) {
+        
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+}
+
+
 
