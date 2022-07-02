@@ -82,14 +82,21 @@
     
     }
 
+        @media screen and (max-width:479px){
+            font-size: 24px;
+        }
+
 }
 
-.contacts__link[href="tel:+380961111111"] {
+.contacts__link[href="mailto:info@devstudio.com"] {
     @media screen and (max-width:767px) {
-        
         font-size: 24px;
         line-height: 1.17;
     }
+
+        @media screen and (max-width:479px) {
+            font-size: 18px;
+        }
 
 }
 
