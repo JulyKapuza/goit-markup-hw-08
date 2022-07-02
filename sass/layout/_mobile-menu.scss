@@ -36,20 +36,6 @@
 
 
 
-// .icon-cross {
-//     display: none;
-// }
-
-// .menu-toggle.is-open .icon-cross {
-//     display: block; 
-        
-// }
-
-// .menu-toggle.is-open .icon-menu {
-//     display: none;
-// }
-
-
 .menu-container {
 
     position: relative;
@@ -61,7 +47,7 @@
         flex-direction: column;
 
         &__nav {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
     }
    
