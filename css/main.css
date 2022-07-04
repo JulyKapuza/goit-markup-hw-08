@@ -453,7 +453,7 @@ address {
     top: 0%;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 18px);
+    height: 100vh;
   }
   .menu-container.is-open {
     padding: 48px 40px;
